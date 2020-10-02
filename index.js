@@ -27,3 +27,6 @@ function toggleButtonClick() {
 
     }
 }
+
+// on scroll check here
+// https://stackoverflow.com/a/39575616/11935485

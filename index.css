@@ -1,5 +1,9 @@
-html, body {
+* {
     font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body {
     height: 100%;
 }
 
@@ -26,20 +30,32 @@ nav {
     margin: 6px 0;
 }
 
+/* mobile */
 @media screen and (max-width: 991px) {
     .book-button {
-      display: none;
+        display: none;
     }
-  }
+    .nav-link {
+        color: black!important;
+    }
+}
 
+/* desktop */
 @media screen and (min-width: 992px) {
     .book-button-mobile {
         display: none;
     }
+
 }
 
 .navbar-nav {
     margin-right: 200px;
+}
+
+.nav-link {
+    color: white;
+    font-weight: 600;
+    font-size: .8em;
 }
 
 .book-button-mobile {
@@ -56,6 +72,7 @@ nav {
 
 .book-span {
     color: white;
+    font-size: .8em;
     font-weight: 600;
 }
 
