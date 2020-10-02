@@ -1,16 +1,17 @@
 html, body {
     font-family: 'Open Sans', sans-serif;
-    height: 100vh;
+    height: 100%;
 }
 
 #main {
-    height: 100vh;
+    height: 100%;
     min-height: 100%;
     background-image: url('images/hero.jpg');
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     background-position: center;
-    background-position-y: -300px;
+    /* add media query to position on full screen */
+    /* background-position-y: -300px;  */
 }
 
 nav {
@@ -18,16 +19,64 @@ nav {
     background-color: rgba(255, 255, 255, 0.15);
 }
 
+.menu-icon {
+    width: 35px;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+@media screen and (max-width: 991px) {
+    .book-button {
+      display: none;
+    }
+  }
+
+@media screen and (min-width: 992px) {
+    .book-button-mobile {
+        display: none;
+    }
+}
+
 .navbar-nav {
     margin-right: 200px;
 }
 
+.book-button-mobile {
+    background-color: #603913;
+    padding: 10px 20px;
+    border: none;
+}
+
 .book-button {
     background-color: #603913;
-    padding: 10px 10px;
+    padding: 10px 20px;
     border: none;
 }
 
 .book-span {
     color: white;
+    font-weight: 600;
+}
+
+#close {
+    display: none;
+}
+
+.navbar-brand-dark {
+    display: none;
+}
+
+.ml-auto {
+    margin-right: 10px;
+}
+
+.collapse.show {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.collapsing {
+    padding-top: 20px;
+    text-align: center;
 }

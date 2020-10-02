@@ -2,81 +2,94 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Document</title>
 </head>
 
 <body>
-    <div id="main">
-        <nav class="navbar navbar-expand-lg">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-              <a class="navbar-brand" href="#"><img src="/images/logo-light.png"></a>
-              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">ACCOMMODATION <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">FACILITIES</a>
-                </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link" href="#">OFFERS</a>
-                  </li>
-                  
-                <li class="nav-item">
-                    <a class="nav-link" href="#">LOCATION</a>
-                  </li>
-                  
-                <li class="nav-item">
-                    <a class="nav-link" href="#">GALLERY</a>
-                  </li>
-                  
-                <li class="nav-item">
-                    <a class="nav-link" href="#">CONTACT</a>
-                  </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <button class="book-button" type="submit"><span class="book-span">BOOK NOW</span></button>
-              </form>
-        </div>
-          </nav>
-        <div class="container">
-            <div class="row">
+  <div id="main">
+    <nav id="nav" class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" onClick="toggleButtonClick()"
+          data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <svg id="open" viewBox="0 0 24 24" fill="white" width="50px" height="50px">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg>
+          <svg id="close" viewBox="0 0 24 24" fill="#603913" width="50px" height="50px">
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+            </svg>
+        </button>
+        <a id="light-logo" class="navbar-brand" href="#"><img src="/images/logo-light.png"></a>
+        <a id="dark-logo" class="navbar-brand-dark" href="#"><img src="/images/logo-dark.png"></a>
+        <button class="book-button-mobile" type="submit"><span class="book-span">BOOK</span></button>
+        <div class="collapse navbar-collapse flex-end" id="navbarTogglerDemo01">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">ACCOMMODATION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FACILITIES</a>
+            </li>
 
-                <section>
-                    <h1>Main Section</h1>
-                    <h1>Hi</h1>
-                </section>
-            </div>
-            <div class="row">
+            <li class="nav-item">
+              <a class="nav-link" href="#">OFFERS</a>
+            </li>
 
-            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#">LOCATION</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">GALLERY</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">CONTACT</a>
+            </li>
+          </ul>
         </div>
+        <button class="book-button" type="submit"><span class="book-span">BOOK</span></button>
+
+
+      </div>
+    </nav>
+    <div class="container">
+      <div class="row">
+
+        <section>
+          <h1>Main Section</h1>
+          <h1>Hi</h1>
+        </section>
+      </div>
+      <div class="row">
+
+      </div>
     </div>
-    <div>Check this out</div>
+  </div>
+  <div>Check this out</div>
 
 
 
 
 
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
+  <script src="index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
