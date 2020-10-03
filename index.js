@@ -34,5 +34,10 @@ $(function () {
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
       });
   });
-// on scroll check here
-// https://stackoverflow.com/a/39575616/11935485
+
+//Smooth scrolling with links
+$('a[href*=\\#]').on('click', function(event){     
+    event.preventDefault();
+    console.log('hi')
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+});
