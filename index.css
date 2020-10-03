@@ -20,13 +20,6 @@ body {
 }
 
 
-/* change position of image */
-@media screen and (min-width: 1490px) {
-    #main {
-        background-position-y: -250px;
-    }
-}
-
 #main-section h1 {
 
     text-align: center;
@@ -240,14 +233,13 @@ nav {
 
 }
 
-
-
 #scroll-down {
     position: absolute;
     margin: 0 auto;
     left: 0;
     right: 0;
     bottom: 20px;
+    filter: drop-shadow( 0px 2px 6px white);
 }
 
 #scroll-down:hover {
