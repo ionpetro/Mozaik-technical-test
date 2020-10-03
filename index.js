@@ -28,6 +28,7 @@ function toggleButtonClick() {
     }
 }
 
+//When user scrolls, add class on navbar
 $(function () {
     $(document).scroll(function () {
         var $nav = $(".navbar-fixed-top");
