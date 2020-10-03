@@ -63,6 +63,15 @@ nav {
     color: rgb(196, 196, 196);
 }
 
+.navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+  }
+  
+  .navbar-fixed-top.scrolled .nav-link {
+    color:#555;
+  }
+
 .book-button-mobile {
     background-color: #603913;
     padding: 10px 20px;

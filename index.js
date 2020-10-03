@@ -28,5 +28,11 @@ function toggleButtonClick() {
     }
 }
 
+$(function () {
+    $(document).scroll(function () {
+        var $nav = $(".navbar-fixed-top");
+        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+      });
+  });
 // on scroll check here
 // https://stackoverflow.com/a/39575616/11935485
