@@ -39,6 +39,5 @@ $(function () {
 //Smooth scrolling with links
 $('a[href*=\\#]').on('click', function(event){     
     event.preventDefault();
-    console.log('hi')
-    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+    $('html,body').animate({scrollTop:$(this.hash).offset().top-50}, 700);
 });
