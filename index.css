@@ -4,7 +4,7 @@
 
 /*focus style for accessibility*/
 *:focus {
-    outline: 2px dotted #603913 !important;
+    outline: .5px dashed #603913 !important;
 }
 
 
@@ -167,7 +167,7 @@ nav {
     left: 0;
     right: 0;
     bottom: 20px;
-    filter: drop-shadow(0px 2px 6px white);
+    filter: drop-shadow(0px 2px 3px white);
 }
 
 #scroll-down:hover {
@@ -176,6 +176,106 @@ nav {
     transform: translateY(5px);
 }
 
+/* Description Section */
+
+#description {
+    padding-top: 4em;
+    text-align: center;
+}
+
+#description h2 {
+    font-weight: 600;
+    padding-bottom: 1em;
+}
+
+#description p {
+    width: 80%;
+    margin: auto;
+}
+
+/* Carousel */
+
+.carousel-indicators {
+    bottom: -30px!important;
+}
+
+#carouselExampleIndicators {
+    width: 100%;
+}
+
+.carousel-indicators .active {
+    background-color: #603913!important;
+}
+
+#carouselExampleIndicators li {
+    background-color: rgba(96,57,19, 0.2);
+    width: 50px!important;
+}
+
+/* Cards Section */
+#card-section {
+    padding: 6em 0!important;
+    background-image: url('images/rooms-background-with-overlay.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-section .row {
+    padding: 1em 0;
+    justify-content: space-around!important;    
+}
+
+#card-section .col {
+    padding: 0;
+    flex-grow: 0!important;
+}
+
+.card {
+    width: 21rem!important;
+    border-radius: 0!important;
+    border: none!important;
+    box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.2);
+}
+
+.card-img-top {
+    border-top-left-radius: 0!important;
+    border-top-right-radius: 0!important;
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.card-text {
+    font-size: .8em;
+}
+
+.card-link {
+    position: relative;
+    color: #603913;
+    font-size: .8em;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.card-link:hover{
+    color: #50300f;    
+}    
+
+
+.card-link-svg {
+    position: absolute;
+    bottom: 1.35em;
+    left: 85px;
+    opacity: 0;
+}
+
+.card-link:hover ~ .card-link-svg {
+    transition: opacity .2s ease-in, transform .2s ease-in;
+    transform: translateX(5px);
+    opacity: 1;
+}
 /* Media Queries for different displays */
 
 /* mobile */
@@ -224,7 +324,7 @@ nav {
 @media screen and (min-width: 992px) {
 
     #main-section-container {
-        top: 10%;
+        top: 5%;
     }
 
     .book-button-mobile {
