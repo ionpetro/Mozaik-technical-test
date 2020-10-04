@@ -211,6 +211,8 @@ nav {
 #carouselExampleIndicators li {
     background-color: rgba(96,57,19, 0.2);
     width: 50px!important;
+    height: 5px!important;
+    border-radius: 10px;
 }
 
 /* Cards Section */
