@@ -1,37 +1,30 @@
-function toggleButtonClick() {
-    const nav = document.getElementById('nav');
-    const closeIcon = document.getElementById('close');
-    const openIcon = document.getElementById('open');
-    const lightLogo = document.getElementById('light-logo');
-    const darkLogo = document.getElementById('dark-logo');
+$('#navbar-toggler').click(() => {
+    const nav = $('#nav');
+    const closeIcon = $('#close');
+    const openIcon = $('#open');
+    const lightLogo = $('#light-logo');
+    const darkLogo = $('#dark-logo');
 
-    // opening the toggle
-    if (!(nav.style.backgroundColor === "white")) {
-        nav.style.backgroundColor = "white";
-
-        closeIcon.style.display = "block";
-        openIcon.style.display = "none";
-
-        lightLogo.style.display = "none";
-        darkLogo.style.display = "block";
-
-    // closing the toggle
+    if ((nav.css('background-color')) !== 'rgb(255, 255, 255)') {
+        console.log('Im here')
+        nav.css('background-color', 'rgb(255, 255, 255)');
+        closeIcon.css('display', 'block');
+        openIcon.css('display', 'none');
+        lightLogo.css('display', 'none');
+        darkLogo.css('display', 'block');
     } else {
-        nav.style.backgroundColor = "rgba(255, 255, 255, 0.15)";
-
-        closeIcon.style.display = "none";
-        openIcon.style.display = "block";
-        
-        lightLogo.style.display = "block";
-        darkLogo.style.display = "none";
-
+        nav.css('background-color', 'rgba(255, 255, 255, 0.15)');
+        closeIcon.css('display', 'none');
+        openIcon.css('display', 'block');
+        lightLogo.css('display', 'block');
+        darkLogo.css('display', 'none');
     }
-}
+})
 
 //When user scrolls, add class on navbar
 $(function () {
     $(document).scroll(function () {
-        var $nav = $(".navbar-fixed-top");
+        const $nav = $(".navbar-fixed-top");
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
       });
   });
