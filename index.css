@@ -291,7 +291,7 @@ footer {
     background-color: #575748;
 }
 
-footer .navbar-nav-row {
+footer #navbar-nav-footer {
     flex-direction: row!important;
     margin: 0 auto!important;
 }
@@ -305,6 +305,7 @@ footer p {
     opacity: .5;
     color: white;
     font-size: .8em;
+    margin: auto;
 
 }
 
@@ -350,6 +351,18 @@ footer p {
         font-size: 1.1em;
         width: 85%;
     }
+
+    footer #navbar-nav-footer {
+        flex-direction: column!important;
+        text-align: center;
+        margin: 0 auto!important;
+    }
+
+    footer #navbar-nav-footer .nav-link {
+        color: white!important;
+        font-size: 1em!important;
+
+    }
 }
 
 /* tablet */ 
@@ -359,7 +372,7 @@ footer p {
     }
 }
 
-/* */
+/* small tablet */
 @media screen and (max-width: 768px) {
     .mobile-card {
         display: none;
