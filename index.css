@@ -185,12 +185,13 @@ nav {
 
 #description h2 {
     font-weight: 600;
-    padding-bottom: 1em;
+    padding-bottom: .5em;
 }
 
 #description p {
     width: 80%;
     margin: auto;
+    padding-top: 1em;
 }
 
 /* Carousel */
@@ -350,6 +351,21 @@ footer p {
         width: 85%;
     }
 }
+
+/* tablet */ 
+@media screen and (max-width: 1200px) {
+    .tablet-card {
+        display: none;
+    }
+}
+
+/* */
+@media screen and (max-width: 768px) {
+    .mobile-card {
+        display: none;
+    }
+}
+
 
 /* desktop */
 @media screen and (min-width: 992px) {
