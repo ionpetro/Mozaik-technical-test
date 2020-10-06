@@ -225,6 +225,10 @@ nav {
 }
 
 /* Cards Section */
+#card-section h3 {
+    font-size: 1.2em;
+}
+
 #card-section {
     padding: 6em 0!important;
     background-image: url('images/rooms-background-with-overlay.png');
