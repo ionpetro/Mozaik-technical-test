@@ -27,7 +27,7 @@ body {
 #main {
     height: 100%;
     min-height: 100%;
-    background-image: url('images/hero.jpg');
+    background-image: url('results/hero.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -231,7 +231,7 @@ nav {
 
 #card-section {
     padding: 6em 0!important;
-    background-image: url('images/rooms-background-with-overlay.png');
+    background-image: url('results/rooms-background-with-overlay.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
