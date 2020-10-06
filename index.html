@@ -11,6 +11,11 @@
     <link rel="icon" 
       type="image/png" 
       href="images/logo-light.png" />
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
   <title>Mountain</title>
 </head>
 
@@ -70,14 +75,14 @@
     <!-- Main Section -->
     <div id="main-section-container" class="d-flex flex-row justify-content-center align-items-center">
       <section id="main-section">
-        <h1>Your Winter<br>Destination</h1>
-        <p>Lorem ipsum dolor. Sed sodales quam sed eros ornare, nec viverra urna aliquet. Quisque laoreet tincidunt
+        <h1 class="wow animate__slow animate__animated animate__fadeInUp">Your Winter<br>Destination</h1>
+        <p class="wow animate__slow animate__animated animate__fadeInUp">Lorem ipsum dolor. Sed sodales quam sed eros ornare, nec viverra urna aliquet. Quisque laoreet tincidunt
           purus, et pellentesque leo dictum placerat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
           posuere cubilia curae; Fusce ac varius metus.</p>
       </section>
     </div>
     <a href="#description-container">
-      <svg version="1.1" width="40px" height="40px" id="scroll-down" xmlns="http://www.w3.org/2000/svg"
+      <svg class="animate__animated animate__slow animate__slideInDown animate__delay-1s" version="1.1" width="40px" height="40px" id="scroll-down" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50"
         style="enable-background:new 0 0 50 50;" xml:space="preserve">
         <style type="text/css">
@@ -117,8 +122,8 @@
   <div class="container" id="description-container">
     <div class="row justify-content-md-center">
       <section id="description">
-        <h2>Dummy Title Goes Here</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in rhoncus risus, sit amet tempus nisl.
+        <h2 class="wow animate__animated animate__fadeInUp">Dummy Title Goes Here</h2>
+        <p class="wow animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in rhoncus risus, sit amet tempus nisl.
           Nunc ut tempor nisl, id condimentum ex. Cras turpis orci, cursus et tristique vitae, dignissim semper ex.
           Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce nec vulputate
           sem. Ut tincidunt ac nulla et viverra. Ut tincidunt ac nulla et viverra. Ut tincidunt ac nulla et viverra.
@@ -128,7 +133,7 @@
           Integer elementum tellus sit
           amet scelerisque euismod. Suspendisse mauris nulla, feugiat at ultricies eget, pretium sit amet dui. Cras a
           suscipit massa. Mauris convallis auctor dignissim. </p>
-        <p>Nunc mauris augue, accumsan luctus luctus in, facilisis sed nisi. Pellentesque nec dui eleifend, fermentum
+        <p class="wow animate__animated animate__fadeInUp">Nunc mauris augue, accumsan luctus luctus in, facilisis sed nisi. Pellentesque nec dui eleifend, fermentum
           mi eget, pretium odio. Donec sed libero a neque egestas pellentesque. Nulla odio turpis, dapibus eu arcu eu,
           ultrices sagittis lectus. Sed mi eros, ultricies at nisi quis, sagittis imperdiet ligula. Cras molestie
           massa eget ipsum sodales fringilla. Fusce at ex vel orci egestas lobortis sit amet eget quam. Fusce pulvinar
@@ -421,7 +426,10 @@
     </div>
   </footer>
 
-
+  <script src="js/wow.min.js"></script>
+  <script>
+  new WOW().init();
+  </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
