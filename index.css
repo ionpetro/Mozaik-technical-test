@@ -7,6 +7,15 @@
     outline: .5px dashed #603913 !important;
 }
 
+::-moz-selection { /* Code for Firefox */
+    background: #603913 !important;
+    color: white;
+  }
+  
+  ::selection {
+    background: #603913 !important;
+    color: white;
+  }
 
 html,
 body {
